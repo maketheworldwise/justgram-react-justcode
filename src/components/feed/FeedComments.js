@@ -1,12 +1,12 @@
 import "./FeedComments.scss";
 
-function FeedComments() {
+function FeedComments(props) {
   return (
     <div className="comment-list">
       <ul>
-        <li>kevin__dev 댓글 1</li>
-        <li>kevin__dev 댓글 2</li>
-        <li>kevin__dev 댓글 3</li>
+        {props.commentList.map((comment) => {
+          return <li key={comment.id}>{comment.content}</li>;
+        })}
       </ul>
     </div>
   );
