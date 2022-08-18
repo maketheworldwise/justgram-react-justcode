@@ -1,0 +1,57 @@
+/*
+ * position
+ * box model
+ * visual
+ * typography
+ * misc
+ */
+
+@mixin flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.feed-contents {
+  padding: 10px;
+
+  .feed-contents__menu {
+    @include flex-center;
+    justify-content: space-between;
+    margin: 10px 0px;
+
+    .feed-contents__heart {
+      margin-right: 10px;
+      content: url("../../assets/images/heart-24x24.png");
+    }
+
+    .feed-contents__speech-bubble {
+      margin-right: 10px;
+      content: url("../../assets/images/speech-bubble-24x24.png");
+    }
+
+    .feed-contents__send {
+      margin-right: 10px;
+      content: url("../../assets/images/send-24x24.png");
+    }
+
+    .feed-contents__bookmark {
+      margin-right: 10px;
+      content: url("../../assets/images/bookmark-24x24.png");
+    }
+  }
+
+  .feed-contents-like {
+    @include flex-center;
+    justify-content: left;
+    margin: 10px 0px;
+
+    .feed-contents__like-image {
+      width: 20px;
+      height: 20px;
+      margin-right: 10px;
+      border: 1px solid #dbdbdb;
+      border-radius: 70%;
+    }
+  }
+}

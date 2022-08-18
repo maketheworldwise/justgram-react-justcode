@@ -1,0 +1,25 @@
+/*
+ * position
+ * box model
+ * visual
+ * typography
+ * misc
+ */
+
+@mixin flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.feed-owner {
+  @include flex-center;
+
+  .feed-owner__image {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+    border: 1px solid #dbdbdb;
+    border-radius: 70%;
+  }
+}
