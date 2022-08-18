@@ -5,8 +5,8 @@ function Main() {
   return (
     <>
       <Header />
-      <div className="common-container">
-        <main className="feeds">
+      <div className="base">
+        <main className="feed-list">
           <Feed />
           <Feed />
           <Feed />

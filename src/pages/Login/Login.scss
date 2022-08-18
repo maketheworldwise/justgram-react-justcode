@@ -12,7 +12,7 @@
   align-items: center;
 }
 
-.common-container {
+.base {
   @include flex-center;
   width: 100%;
   min-height: 100vh;
@@ -24,19 +24,19 @@
   border: 1px solid #dbdbdb;
   background-color: #ffffff;
 
-  .login-header {
+  .head {
     @include flex-center;
     margin: 40px 0px;
     font-size: 40px;
   }
 
-  .login-form {
-    .login-form__content {
+  .form {
+    .content {
       @include flex-center;
       flex-direction: column;
       padding: 0px 40px;
 
-      .login-form__input {
+      .user-info {
         width: 100%;
         height: 40px;
         margin-top: 10px;
@@ -48,11 +48,11 @@
         font-size: 16px;
       }
 
-      .login-form__input:focus {
+      .user-info:focus {
         outline: none;
       }
 
-      .login-form__button {
+      .send-info {
         width: 100%;
         height: 40px;
         border: none;
@@ -65,7 +65,7 @@
       }
     }
 
-    .login-form__content--find-password {
+    .find-password {
       margin-top: 100px;
       margin-bottom: 20px;
       color: #497095;

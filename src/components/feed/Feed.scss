@@ -18,36 +18,37 @@
   border: 1px solid #dbdbdb;
   background-color: #ffffff;
 
-  .feed-header {
+  .head {
     @include flex-center;
     justify-content: space-between;
     padding: 10px;
 
-    .feed-header__control {
+    .control {
       content: url("../../assets/images/control-24x24.png");
     }
   }
 
-  .feed-created-time {
+  .created-at {
     padding: 0px 10px;
     color: #a2a2a2;
   }
 
-  .feed-comment-form {
+  .form {
     @include flex-center;
-    padding: 10px;
+    padding: 15px 10px;
 
-    .feed-comment-form__input {
+    .comment {
       width: 100%;
       border: none;
       box-sizing: border-box;
+      font-size: 16px;
     }
 
-    .feed-comment-form__input:focus {
+    .comment:focus {
       outline: none;
     }
 
-    .feed-comment-form__button {
+    .send-comment {
       border: none;
       background-color: #ffffff;
       white-space: nowrap;

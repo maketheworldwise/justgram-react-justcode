@@ -7,7 +7,7 @@ function Logo() {
   return (
     <div className="logo">
       <LogoImage />
-      <span className="logo-separator">|</span>
+      <span className="separator">|</span>
       <LogoText />
     </div>
   );

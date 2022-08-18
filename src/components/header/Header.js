@@ -2,14 +2,14 @@ import "./Header.scss";
 
 import Logo from "../logo/Logo";
 import HeaderSearch from "./HeaderSearch";
-import HeaderFeatures from "./HeaderFeatures";
+import HeaderMenu from "./HeaderMenu";
 
 function Header() {
   return (
-    <header className="header">
+    <header className="main-header">
       <Logo />
       <HeaderSearch />
-      <HeaderFeatures />
+      <HeaderMenu />
     </header>
   );
 }

@@ -12,10 +12,10 @@
   align-items: center;
 }
 
-.feed-owner {
+.owner {
   @include flex-center;
 
-  .feed-owner__image {
+  .user-image {
     width: 20px;
     height: 20px;
     margin-right: 10px;
